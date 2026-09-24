@@ -18,3 +18,5 @@ artifacts/*.json
 artifacts/*.txt
 !artifacts/companies-inqueue.txt.example
 *.log
+run_daily.sh
+scripts/
