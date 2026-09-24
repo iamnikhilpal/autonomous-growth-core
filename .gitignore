@@ -1,0 +1,20 @@
+# Environments & Secrets
+.env
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Browser & User Profiles
+artifacts/brave_profile/
+artifacts/chrome_profile/
+artifacts/users/
+*.lock
+.*.lock
+*.duckdb
+
+# Local Dynamic Logs & Queues
+artifacts/*.json
+artifacts/*.txt
+!artifacts/companies-inqueue.txt.example
+*.log

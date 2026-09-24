@@ -1,0 +1,34 @@
+[browser]
+default_brave_path = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+flags = [
+    "--disable-blink-features=AutomationControlled",
+    "--no-default-browser-check",
+    "--disable-infobars"
+]
+
+[growth.safety]
+max_daily_requests = 8
+max_weekly_requests = 50
+operating_hour_start = 9
+operating_hour_end = 19
+lock_timeout_seconds = 30
+user_lock_timeout_seconds = 10
+
+[growth.scraping]
+default_max_pages = 5
+min_required_profiles = 10
+default_withdrawal_batch = 20
+
+[growth.queries]
+role_keywords = '("Software Engineer" OR "SWE" OR "Backend" OR "Tech Lead")'
+
+[content]
+technical_topics = [
+    "Database connection pooling at scale: When PgBouncer saves Postgres clusters vs. common configuration pitfalls.",
+    "The anatomy of an AI Agent pipeline: Why deterministic tools must stay separate from LLM reasoning loops.",
+    "Kubernetes startup vs. liveness probes: Why misconfigured delays cause cascade restarts during traffic spikes.",
+    "Building resilient microservices: Why retry policies without exponential backoff and jitter trigger thundering herds.",
+    "Model Context Protocol (MCP) in production: Structuring tools so agents stop hallucinating parameters.",
+    "Affine transformations and matrix rank: Why linear algebra fundamentals dictate embedding search performance."
+]
